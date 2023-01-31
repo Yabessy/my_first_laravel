@@ -1,8 +1,7 @@
-@extends('layout')
+<x-layout>
 
-@section('content')
-    <a href="/" class="flex text-black w-14 gap-1 h-5 ml-4 mb-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7">
+    <a href="/" class="flex text-black w-14 gap-1 h-5 ml-4 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
         </svg>
         Back
@@ -17,7 +16,7 @@
                     {{ $listing->title }}
                 </h3>
                 <div class="text-xl font-bold mb-4">{{ $listing->company }}</div>
-                <x-listing-tags :tagss="$listing->tags"/>
+                <x-listing-tags :tagss="$listing->tags" />
                 <div class="text-lg my-4 flex items-center gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
@@ -47,4 +46,5 @@
             </div>
         </x-card>
     </div>
-@endsection
+
+</x-layout>

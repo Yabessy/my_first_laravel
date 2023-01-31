@@ -39,9 +39,9 @@
         </ul>
       </nav>
             {{-- View Output --}}
-      <div class="mt-6 mb-40">
-          @yield('content')
-      </div>
+      <main class="mt-6 mb-40">
+          {{$slot}}
+      </main>
       <footer
       class="bg-red-500 fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-14 mt-24 md:justify-center">
       <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
