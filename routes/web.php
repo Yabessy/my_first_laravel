@@ -18,11 +18,11 @@ use App\Models\Listing;
 Route::get('/', function () {
     return view('listings', [
         'heading' => 'Latest List',
-        'listing' => Listing::all()
+        'listings' => Listing::all()
     ]);
 });
-Route::get('/{id}', function ($id) {
+Route::get('/{listing}', function (Listing $listing) {
     return view('listing', [
-        'list' => Listing::find($id)
+        'listing' => $listing
     ]);
 });

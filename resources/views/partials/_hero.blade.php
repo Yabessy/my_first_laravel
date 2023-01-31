@@ -1,4 +1,4 @@
-<section class="bg-red-400 relative h-72 bg-laravel flex flex-col justify-center align-center text-center space-y-4 mb-6">
+<section class="bg-red-500 relative h-72 bg-laravel flex flex-col justify-center align-center text-center space-y-4 mb-6">
     <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-no-repeat bg-center"
       style="background-image: url('images/laravel-logo.png')"></div>
   
